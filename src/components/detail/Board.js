@@ -31,7 +31,7 @@ class Board extends Component {
                     onBlur={(event, editor) => {
                         onEditorChange(editor.getData());
                     }}
-                    />
+                />
             </div>
         );
     };

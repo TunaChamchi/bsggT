@@ -13,12 +13,13 @@ class List extends Component {
         const { intl, talks } = this.props;
         const { tagList } = this.state;
 
+        if (!talks) return '';
+
         return talks.map((talk, idx) => {
-            console.log(talk);
             const preview = talk['preview'] || "img/no.jpg";
 
             return (
-                <div className="talk_right_board_box">
+                <div className="talk_right_board_box" key={"talk_right_board_box_"+idx}>
                     <div className="board_like">
                         <div className="board_like_tri"></div>
                         <div className="board_like_num">{talk['like_count']}</div>
