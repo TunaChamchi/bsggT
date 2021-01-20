@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { injectIntl } from 'react-intl';
+import { Link } from 'react-router-dom';
 
 class TabTap extends Component {
     render() {
@@ -8,9 +9,11 @@ class TabTap extends Component {
         return (
             <div className="talk_right_banner">
                 <div className="talk_right_banners">
-                    <div className="talk_right_write">
-                        <img className="talk_left_tab_img1" src="img/Talk/talk.png" />
-                        </div>
+                    <Link to={"/Create"}>
+                        <div className="talk_right_write">
+                            <img className="talk_left_tab_img1" src="img/Talk/talk.png" />
+                            </div>
+                    </Link>
                     <div className="talk_right_tab actived">
                         <img className="talk_left_tab_img" src="img/Talk/hot.png" />
                         <span className="talk_left_tab_span">{intl.formatMessage({id: 'Tab.인기'})}</span>
