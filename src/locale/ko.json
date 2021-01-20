@@ -1,5 +1,7 @@
 {
     "lang": "ko",
+    "footer":"BSGG.kr isn’t endorsed by Nimble Neuron.\n Eternal Return: Black Survival is trademarks or registered trademarks of Nimble Neuron.\n Data Based on Nimble Neuron",
+
     "Title": {
         "Main": "블랙 서바이벌 - 캐릭터 티어 / 캐릭터 정보",
         "Map":"블랙 서바이벌 - 지도 도감 / 루트 제작",
@@ -28,5 +30,20 @@
         "초":"몇초 전",
         "다음":"다음",
         "이전":"이전"
+    },
+    "Text":{
+        "닉네임":"닉네임 입력",
+        "비밀번호":"비밀번호 입력",
+        "제목":"제목",
+        "댓글":"댓글 달기"
+    },
+    "Button":{
+        "등록":"등록",
+        "취소":"취소",
+        "신고":"신고",
+        "추천":"추천",
+        "수정":"수정",
+        "삭제":"삭제",
+        "답글":"답글"
     }
 }

@@ -105,16 +105,16 @@ class Create extends Component {
                                 <div className="talk_right_talk_tag_buttons">
                                     {this.onTagView()}
                                 </div>
-                                <input className="talk_right_talk_title" placeholder="제목" value={title} onChange={(e) => this.setState({title:e.target.value})}></input>
+                                <input className="talk_right_talk_title" placeholder={intl.formatMessage({id: 'Text.제목'})} value={title} onChange={(e) => this.setState({title:e.target.value})}></input>
                                 <Board 
                                     uuid={uuid}
                                     onEditorChange={(e) => this.onEditorChange(e)}
                                     />
-                                <input className="talk_right_talk_name" placeholder="닉네임 입력" value={name} onChange={(e) => this.setState({name:e.target.value})}></input>
-                                <input type="password" className="talk_right_talk_name" placeholder="비밀번호 입력" value={pw} onChange={(e) => this.setState({pw:e.target.value})}></input>
+                                <input className="talk_right_talk_name" placeholder={intl.formatMessage({id: 'Text.닉네임'})} value={name} onChange={(e) => this.setState({name:e.target.value})}></input>
+                                <input type="password" className="talk_right_talk_name" placeholder={intl.formatMessage({id: 'Text.비밀번호'})} value={pw} onChange={(e) => this.setState({pw:e.target.value})}></input>
                                 <div className="talk_right_reply_comments">
-                                    <div className="talk_right_talk_button" onClick={(e) => this.onSubmit()}>등록</div>
-                                    <div className="talk_right_talk_button" onClick={(e) => this.onCancel()}>취소</div>
+                                    <div className="talk_right_talk_button" onClick={(e) => this.onSubmit()}>{intl.formatMessage({id: 'Button.등록'})}</div>
+                                    <div className="talk_right_talk_button" onClick={(e) => this.onCancel()}>{intl.formatMessage({id: 'Button.취소'})}</div>
                                 </div>
                             </div>
                         </div>
