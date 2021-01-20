@@ -6,12 +6,14 @@ class App extends Component {
     render() {
         return (
             <div>
-                <Route exact path="/" component={Main}/>
                 <Switch>
-                    <Route path="/Detail" component={Detail}/>
-                    <Route path="/Create" component={Create}/>
+                    <Route path="/:tag" component={Main}/>
+                    <Route path="/:tag/:id" component={Detail}/>
+                    <Route path="/:tag/Create" component={Create}/>
 
                     <Route path="/404" component={Error404}/>
+                    <Redirect from="/" to="/all" />
+                    <Redirect to="/404" component={Error404} />
                 </Switch>
             </div>
         );

@@ -58,3 +58,10 @@ export const charList = () => {
 
     return list;
 }
+
+export const tagList = {
+    'all': -1,
+    'free': 0,
+    'qna': 1,
+    'tip': 2
+}

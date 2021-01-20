@@ -29,6 +29,7 @@ class Main extends Component {
 
     fetchHandler = async (query, prevState) => {
         const { intl } = this.props;
+        const { tag } = this.props.match.params;
 
         const lang  = intl.formatMessage({id: 'lang'});
         const tag   = parseInt(query.tag)  || '';
@@ -63,10 +64,14 @@ class Main extends Component {
         }
     }
 
+    ProductDetails = (props) => {
+        console.log('tag', props.tag);
+    }
+
     render() {
         const { intl } = this.props;
         const { talks } = this.state;
-        
+
         const metaData = {
             title: 'BSGG.kr - ' + intl.formatMessage({id: 'Title.Main'}),
         }
